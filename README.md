@@ -39,3 +39,10 @@ taskkill /pid 7476
 ```
 
 where 7476 is the PID of the program to be killed
+
+## List all processes
+
+```powershell
+tasklist
+```
+ 
