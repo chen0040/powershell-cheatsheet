@@ -25,3 +25,17 @@ The following comand display the list of all files and directories containing th
 ```powershell
 Get-ChildItem -recurse | Select-String -pattern "codezone" | group path | select name
 ```
+
+## Check which program is listening at the port 8080
+
+```powershell
+ netstat -aon | findstr :8080
+```
+
+## Kill a process with a PID
+
+```powershell
+taskkill /pid 7476
+```
+
+where 7476 is the PID of the program to be killed
