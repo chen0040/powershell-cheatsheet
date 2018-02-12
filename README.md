@@ -10,6 +10,14 @@ The following command delete all files that has the name .DS_Store
 Get-ChildItem -Include ".DS_Store" -Recurse -Force | Remove-Item -Force –Recurse
 ```
 
+## Delete all files with the same extension recursively 
+
+The following command delete all files that has the extension *.meta
+
+```powershell
+Get-ChildItem *.meta -Recurse -Force | Remove-Item -Force –Recurse
+```
+
 ## Replace a particular text in all files of the same extensions recursively in a folder
 
 The following command replace the text "old-text" with "new-text" for all files with .cs extension in the current directory recursively.
